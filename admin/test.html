@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/personal.css">
+</head>
+<body>
+<form action="personalchange.php" method="get">
+    <ul>
+        <li>
+            <span>用户名：</span><h5><?php echo $user?></h5>
+        </li>
+        <li>
+            <span>男</span><input type="radio"<?php echo $men?> chesked name="sex">
+            <span>女</span><input type="radio"<?php echo $women?> name="sex">
+        </li>
+        <li >
+            <span>电话：</span><input type="text" name="tel" autocomplete="off" value="<?php echo $data['tel']?>">
+        </li>
+        <li>
+            <span>email：</span><input type="text" name="email" autocomplete="off" value="<?php echo $data['email']?>">
+        </li>
+        <li>
+            <span>微信：</span><input type="text" name="wechat" autocomplete="off" value="<?php echo $data['wechat']?>">
+        </li>
+        <li>
+            <input type="submit" value="提交修改" name="upChange" id="upChange">
+        </li>
+    </ul>
+</form>
+<button>修改密码</button>
+<form action="changepass.php" method="post">
+    <ul>
+        <li>
+            <input type="hidden" name="user" value="<?php echo $user ?>">
+            <span>原始密码：</span><input type="password" name="oldpass" id="oldpass">
+        </li>
+        <li>
+            <span>新密码：</span><input type="password" name="newpass" id="newpass">
+        </li>
+        <li>
+            <span>确认密码：</span><input type="password" name="checkpass">
+        </li>
+        <li>
+            <input type="submit" value="提交修改">
+        </li>
+    </ul>
+</form>
+</body>
+</html>

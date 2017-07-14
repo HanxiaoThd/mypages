@@ -1,0 +1,10 @@
+footer{
+    background: #292929;
+    margin-top:60px;
+    border-top:5px solid #afafaf;
+    width:100%;
+}
+.foot-title{
+    padding-top:20px;
+    padding-bottom: 20px;
+}

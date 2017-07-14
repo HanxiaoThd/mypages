@@ -1,0 +1,158 @@
+body {
+    background-image: url(../../../src/img/index/bg.jpg);
+}
+.s-title{
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 90px;
+}
+.author{
+    text-align: center;
+}
+.s-con{
+    margin-top:10px;
+    overflow: hidden;
+}
+.talkbox{
+    position: relative;
+}
+#talk{
+    width:100%;
+    height:62px;
+    padding:4px;
+    box-sizing: border-box;
+    resize: none;
+    position: relative;
+}
+.messageBox{
+    margin-top:20px;
+}
+#mesbtn{
+    width:60px;
+    display: inline-block;
+    height:30px;
+    float: right;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius:4px;
+    margin-top:10px;
+}
+.mesBox{
+    display: block;
+    width:100%;
+    height:auto;
+    padding:10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.headimg{
+    margin-top:24px;
+    float: left;
+    width:50px;
+    height:50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.name{
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    width:100%;
+    text-align: center;
+    line-height: 14px;
+}
+.mesp{
+    background: #ffffFF;
+    margin-top:30px;
+    position: relative;
+}
+.line{
+    float: left;
+    width: 1px;
+    height:95px;
+    margin-top:8px;
+    background-color: #ccc;
+    margin-left: 10px;
+}
+.titlebox{
+    float: left;
+    width:75%;
+    height:100%;
+    padding:20px;
+    box-sizing: border-box;
+    position: relative;
+}
+#listinput{
+    margin-top:6px;
+    width:75%;
+    border:1px solid #000000;
+    height:24px;
+    padding-left:4px;
+    box-sizing: border-box;
+}
+.conbtn{
+    display: inline-block;
+    width:40px;
+    color: #fff;
+    text-align: center;
+    height:20px;
+    line-height: 20px;
+    background-color: #222;
+    border-radius: 3px;
+    float: right;
+    cursor: pointer;
+    margin-top:3px;
+}
+.conlist{
+    width:75%;
+    height:50px;
+    float: left;
+    margin-top:10px;
+    background-color: #ccc;
+}
+.listhead{
+    width:40px;
+    height:40px;
+    float: left;
+    margin-left:5px;
+    margin-top:5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.listname{
+    float: left;
+    margin-left:6px;
+    color: #08c;
+}
+.listname > span{
+    color: #000;
+    padding-left: 10px;
+}
+.listcon{
+    margin-top:20px;
+    margin-left:50px;
+}
+.listalert,.textalert{
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width:80px;
+    height:22px;
+    background-color: #000000;
+    color: #ffffFF;
+    text-align: center;
+    line-height:22px;
+    border-radius: 4px;
+    display: none;
+}

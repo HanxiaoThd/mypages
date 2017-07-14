@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.validate.min.js"></script>
+    <script src="../lib/uploadimg.js"></script>
+    <style>
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <ul class="list">
+                <li><a href="" target="window"></a></li>
+            </ul>
+        </div>
+    </div>
+    <iframe src="" name="window" class="col-md-8 col-xs-12">
+        
+    </iframe>
+</div>
+<div class="upBox"></div>
+<div class="container" >
+    <div class="row">
+        <div class="col-md-5">
+            <form action="personalchange.php" method="post">
+                <ul>
+                    <li>
+                        <h4>
+                            <span class="">昵称：<?php if($row['names']){echo $row["names"];}else {echo "请设置昵称<br>" ?><input type="text" name="names" placeholder="用户名">
+                                <?php }?></span>
+                        </h4>
+                    </li>
+
+                    <li >
+                        <span class="text">电话：</span>
+                        <input class="message" type="text" name="tel" autocomplete="off" value="">
+                    </li>
+                    <li>
+                        <span class="text">email：</span>
+                        <input class="message" type="text" name="email" autocomplete="off" value="">
+                    </li>
+                    <li>
+                        <input type="submit" value="提交修改" name="upChange" id="upChange">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-md-7">
+
+            <form action="changepass.php" method="post" id="changebox" style="display: block">
+                <ul>
+                    <li>
+                        <input type="hidden" name="user" value="">
+                        <span>原始密码：</span>
+                        <input class="message" type="password" name="oldpass" id="oldpass">
+                    </li>
+                    <li>
+                        <span>新密码：</span>
+                        <input class="message" type="password" name="newpass" id="newpass">
+                    </li>
+                    <li>
+                        <span>确认密码：</span>
+                        <input class="message" type="password" name="checkpass">
+                    </li>
+                    <li>
+                        <input type="submit" value="提交修改" class="change">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<textarea>
+    <button></button>
+</textarea>
+</body>
+<script type="text/javascript">
+    var obj=new upload_1();
+    var dom=document.querySelector('.upBox');
+    obj.createView(dom);
+
+</script>
+</html>

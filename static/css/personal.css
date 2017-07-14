@@ -1,0 +1,45 @@
+form{
+    width:100%;
+    height:50%;
+    font-size: 18px;
+}
+li{
+    width:100%;
+    height: auto;
+    padding:10px;
+    box-sizing: border-box;
+    line-height:30px;
+}
+li > span{
+    display: inline-block;
+    width:100px;
+    padding-right:10px;
+    height:100%;
+}
+li > span.sex{
+    text-align: right;
+    width:30px;
+}
+li > span.text{
+    width: 80px;
+    text-align: right;
+}
+li > input.message{
+    width:220px;
+    height:20px;
+    font-size: 16px;
+    padding:4px ;
+    border: 1px solid #798699;
+}
+#upChange , .change{
+    width:80px;
+    height:34px;
+    border:none;
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffFF;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#changebox{
+    display: none;
+}
